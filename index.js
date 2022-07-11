@@ -9,7 +9,7 @@ const server = http.createServer((req,res) => {
     const jsonContent = JSON.stringify(loadUser())
 
     res.writeHead(200, { 'Content-Type' : 'text/plain' })
-    res.write(`${msg.message}`)
+    res.write(`${jsonContent}`)
     res.end()
 })
 
