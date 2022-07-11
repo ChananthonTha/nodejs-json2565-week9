@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000
 
 const server = http.createServer((req,res) => {
     // const jsonContent = JSON.stringify(loadUser())
-    const jsonContent = JSON.stringify(importVnl2022())
+    const jsonContent = JSON.stringify(loadVnl2022())
     res.writeHead(200, { 'Content-Type' : 'text/plain' })
     res.write(`${jsonContent}`)
     res.end()
