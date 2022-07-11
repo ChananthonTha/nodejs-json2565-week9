@@ -26,7 +26,7 @@ const server = http.createServer((req,res) => {
     }
     else {
         res.writeHead(200, { 'Content-Type' : 'text/plain' })
-        res.write(`400 NOT FOUND}`)
+        res.write(`400 NOT FOUND`)
         res.end()
     }
 })
