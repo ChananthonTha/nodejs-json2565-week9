@@ -1,5 +1,5 @@
 const http = require('http')
-const msg = require('message.js')
+const msg = require('./message.js')
 
 const host = "localhost"
 const PORT = process.env.PORT || 5000
