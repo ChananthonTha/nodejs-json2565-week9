@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5000
 const server = http.createServer((req,res) => {
     const jsonUser = JSON.stringify(loadUser())
     const jsonVnl2022 = JSON.stringify(loadVnl2022())
+    
     if(req.url === '/'){
         res.writeHead(200, { 'Content-Type' : 'text/plain' })
         res.write(`${msg.message}`)
